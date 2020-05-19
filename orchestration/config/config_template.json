@@ -14,10 +14,13 @@
         "maps":[
           {
             "name": "",
-            "actions": [
-              {"name": "CLEAR_OUTPUT_DIRECTORY", "arguments": {}},
-              {"name": "EXPORT_ALL_PERSOS_AND_CONVERT_TO_BLEND_FILES", "arguments": {}}
-            ]
+            "run": true,
+            "action": {"EXPORT_PERSOS_MATCHING_NAME": {"name_regex": "*"}}
+          },
+          {
+            "name": "",
+            "run": true,
+            "action": {"EXPORT_PERSOS_MATCHING_NAME": {"name_regex": "*rayman*"}}
           }
         ]
       }
@@ -25,6 +28,6 @@
 
     "output_directory": "",
     "use_current_datetime_as_run_label": false,
-    "use_run_label": "TEST_EXPORT_AND_IMPORT"
+    "use_run_label_as_default": "TEST_EXPORT_AND_IMPORT"
   }
 }
