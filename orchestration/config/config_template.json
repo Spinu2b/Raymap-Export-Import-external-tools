@@ -1,14 +1,26 @@
 {
   "config_format_version": "1.0",
   "config": {
-    "action": "EXPORT_ALL_PERSOS_FROM_MAP_AND_CONVERT_TO_BLEND",
     "blender_executable_path": "",
     "raymap_executable_path": "",
 
-    "game_selected": "",
-    "gamedatabin_directory_path": "",
-    "map_name": "",
+    "max_processes_count": 1,
+    "persos_from_one_map_at_once": 1,
 
-    "output_directory": ""
+    "export_tasks": [
+      {
+        "game_selected": "",
+        "gamedatabin_directory_path": "",
+        "maps":[
+          {
+            "name": "",
+            "actions": [ {"name": "EXPORT_ALL_PERSOS_AND_CONVERT_TO_BLEND_FILES", "arguments": {}} ]
+          }
+        ]
+      }
+    ],
+
+    "output_directory": "",
+    "logs_directory": ""
   }
 }
