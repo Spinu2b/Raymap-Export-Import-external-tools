@@ -14,13 +14,17 @@
         "maps":[
           {
             "name": "",
-            "actions": [ {"name": "EXPORT_ALL_PERSOS_AND_CONVERT_TO_BLEND_FILES", "arguments": {}} ]
+            "actions": [
+              {"name": "CLEAR_OUTPUT_DIRECTORY", "arguments": {}},
+              {"name": "EXPORT_ALL_PERSOS_AND_CONVERT_TO_BLEND_FILES", "arguments": {}}
+            ]
           }
         ]
       }
     ],
 
     "output_directory": "",
-    "logs_directory": ""
+    "use_current_datetime_as_run_label": false,
+    "use_run_label": "TEST_EXPORT_AND_IMPORT"
   }
 }
